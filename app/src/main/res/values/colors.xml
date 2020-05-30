@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff403b</color>
+    <color name="colorPrimaryDark">#ff403b</color>
+    <color name="colorAccent">#ff403b</color>
+
+    <color name="background"> #ff403b</color>
+    <color name="shadow"> #ff2520</color>
+    <color name="highlight"> #ff6E6B</color>
+    
+    
+    <color name="white"> #ffffff</color>
+    <color name="black"> #000000</color>
+    <color name="Dark"> #191a1e</color>
+   <color name="light_white">#A5A9A9</color>
+</resources>

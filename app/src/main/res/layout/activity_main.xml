@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+ <ImageView
+     android:layout_width="200dp"
+     android:layout_height="300dp"
+    
+     />
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="outer"
+        android:elevation="6dp"
+        app:neomorph_corner_radius="10dp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_shadow_color="@color/shadow"
+        app:neomorph_highlight_color="@color/highlight"
+        android:layout_centerInParent="true"
+        
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/food_loading"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+           /> 
+
+
+
+
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    <TextView
+        android:id="@+id/tv_hey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey Hungry!"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_below="@id/layout_loading"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's find some food for you "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/tv_hey"
+
+        android:layout_alignStart="@id/tv_hey"
+        android:layout_alignLeft="@id/tv_hey" />
+
+</RelativeLayout>
